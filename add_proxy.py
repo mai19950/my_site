@@ -21,7 +21,7 @@ def push_to_github():
 
 if __name__ == '__main__':
   try:
-    update_proxy(argv[1])
+    update_proxy('\n' + argv[1])
     push_to_github()
   except:
     print('please input site')
