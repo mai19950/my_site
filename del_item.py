@@ -1,27 +1,23 @@
-import base64 , os
+import base64
 from sys import argv
-import time
+from add_proxy import push_to_github
 
 
-def update_proxy(item: str):
+def del_item(item: str):
   with open('./proxy.txt', mode="r", encoding="utf8") as f:
     data = f.readlines()
-  data.append(item)
+  for it in data:
+    if item in it:
+      data.remove(it)
   with open('./proxy.txt', mode="w+", encoding="utf8") as f:
     f.writelines(data)
   with open('proxy.base64', mode="wb+") as f:
     f.write(base64.b64encode(bytes('\n'.join(data), 'utf-8')))
 
 
-def push_to_github():
-  os.system('git add . ')
-  os.system(f'git commit -m "{time.strftime("%Y-%m-%d_%H-%M-%S",time.localtime())} update item"')
-  os.system("git push")
-
-
 if __name__ == '__main__':
   try:
-    update_proxy('\n' + argv[1])
+    del_item(argv[1])
     push_to_github()
   except:
     print('please input site')
