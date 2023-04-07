@@ -15,7 +15,7 @@ def update_proxy(item: str):
 
 def push_to_github():
   os.system('git add . ')
-  os.system(f'git commit -m "{time.time()} update item"')
+  os.system(f'git commit -m "{time.strftime("%Y-%m-%d_%H-%M-%S",time.localtime())} update item"')
   os.system("git push")
 
 
