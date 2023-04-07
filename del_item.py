@@ -1,23 +1,37 @@
-import base64
+import copy
 from sys import argv
-from add_proxy import push_to_github
+from model import *
+
+class RemoveModel:
+  def __init__(self) -> None:
+    self.DataModel = ProxyData()
+    self.bak_data = copy.deepcopy(self.DataModel.data)
+    self.git_msg = f'{time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())} delete item'
 
 
-def del_item(item: str):
-  with open('./proxy.txt', mode="r", encoding="utf8") as f:
-    data = f.readlines()
-  for it in data:
-    if item in it:
-      data.remove(it)
-  with open('./proxy.txt', mode="w+", encoding="utf8") as f:
-    f.writelines(data)
-  with open('proxy.base64', mode="wb+") as f:
-    f.write(base64.b64encode(bytes('\n'.join(data), 'utf-8')))
+  def del_items(self, items: list):
+    for item in items:
+      self.DataModel.remove(item)
+    self.DataModel.save(self.git_msg)
+
+  def del_item_from_index(self, index_list: list):
+    for index in index_list:
+      if index == "all":
+        self.DataModel.clear().save(self.git_msg)
+        exit(Text.red_bg("clear all data"))
+      try:
+        self.DataModel.remove(self.bak_data[int(index)])
+      except Exception as e:
+        Log.error(e.args)
+        self.del_items(index_list)
+        return 
+    self.DataModel.save(self.git_msg)
 
 
 if __name__ == '__main__':
   try:
-    del_item(argv[1])
-    push_to_github()
+    # del_item(argv[1])
+    RemoveModel().del_item_from_index(argv[1].split(','))
+    # push_to_github(f'{time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())} delete item')
   except:
-    print('please input site')
+    Log.error('please input site')
