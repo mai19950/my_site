@@ -1,6 +1,5 @@
-import base64
 from sys import argv
-from add_proxy import push_to_github
+from add_proxy import *
 
 
 def del_item(item: str):
@@ -18,6 +17,6 @@ def del_item(item: str):
 if __name__ == '__main__':
   try:
     del_item(argv[1])
-    push_to_github()
+    push_to_github(f'{time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())} delete item')
   except:
     print('please input site')

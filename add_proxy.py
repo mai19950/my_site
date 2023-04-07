@@ -13,15 +13,15 @@ def update_proxy(item: str):
     f.write(base64.b64encode(bytes('\n'.join(data), 'utf-8')))
 
 
-def push_to_github():
+def push_to_github(msg: str):
   os.system('git add . ')
-  os.system(f'git commit -m "{time.strftime("%Y-%m-%d_%H-%M-%S",time.localtime())} update item"')
+  os.system(f'git commit -m "{msg}"')
   os.system("git push")
 
 
 if __name__ == '__main__':
   try:
     update_proxy('\n' + argv[1])
-    push_to_github()
+    push_to_github(f'{time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())} update item')
   except:
     print('please input site')
