@@ -8,10 +8,10 @@ def update_proxy(item: str):
   with open('./proxy.txt', mode="r", encoding="utf8") as f:
     data = f.readlines()
   data.append(item)
-  data = list(set(data))
+  data = list(set(map(lambda x: x.strip(), data)))
   Log.success(f'update {len(data)} proxy')
   with open('./proxy.txt', mode="w+", encoding="utf8") as f:
-    f.writelines(data)
+    f.write('\n'.join(data))
   with open('proxy.base64', mode="wb+") as f:
     f.write(base64.b64encode(bytes('\n'.join(data), 'utf-8')))
 
@@ -26,5 +26,6 @@ if __name__ == '__main__':
   try:
     update_proxy('\n' + argv[1])
     push_to_github(f'{time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())} update item')
-  except:
+  except Exception as e:
+    print(e)
     print('please input site')
