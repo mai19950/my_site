@@ -1,12 +1,15 @@
 import base64 , os
 from sys import argv
 import time
+from color_log import Log
 
 
 def update_proxy(item: str):
   with open('./proxy.txt', mode="r", encoding="utf8") as f:
     data = f.readlines()
   data.append(item)
+  data = list(set(data))
+  Log.success(f'update {len(data)} proxy')
   with open('./proxy.txt', mode="w+", encoding="utf8") as f:
     f.writelines(data)
   with open('proxy.base64', mode="wb+") as f:
