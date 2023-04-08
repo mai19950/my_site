@@ -4,11 +4,20 @@ import time
 from color_log import Log
 
 
+def deduplication(array: list) -> list:
+  res = []
+  for it in array:
+    it = it.strip()
+    if it not in res:
+      res.append(it)
+  return res
+
+
 def update_proxy(item: str):
   with open('./proxy.txt', mode="r", encoding="utf8") as f:
     data = f.readlines()
   data.append(item)
-  data = list(set(map(lambda x: x.strip(), data)))
+  data = deduplication(data)
   Log.success(f'update {len(data)} proxy')
   with open('./proxy.txt', mode="w+", encoding="utf8") as f:
     f.write('\n'.join(data))
