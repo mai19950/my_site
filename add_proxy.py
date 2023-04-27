@@ -28,7 +28,7 @@ def update_proxy(item: str):
 def push_to_github(msg: str):
   os.system('git add . ')
   os.system(f'git commit -m "{msg}"')
-  os.system("git push")
+  # os.system("git push")
 
 
 if __name__ == '__main__':
