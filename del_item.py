@@ -3,14 +3,14 @@ from add_proxy import *
 
 
 def del_item(item: str):
-  with open('./proxy.txt', mode="r", encoding="utf8") as f:
+  with open(join_dir('proxy.txt'), mode="r", encoding="utf8") as f:
     data = f.readlines()
   for it in data:
     if item in it:
       data.remove(it)
-  with open('./proxy.txt', mode="w+", encoding="utf8") as f:
+  with open(join_dir('proxy.txt'), mode="w+", encoding="utf8") as f:
     f.writelines(data)
-  with open('proxy.base64', mode="wb+") as f:
+  with open(join_dir('proxy.base64'), mode="wb+") as f:
     f.write(base64.b64encode(bytes('\n'.join(data), 'utf-8')))
 
 
