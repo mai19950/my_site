@@ -16,7 +16,9 @@ def del_item(item: str):
 
 if __name__ == '__main__':
   try:
-    del_item(argv[1])
+    # del_item(argv[1])
+    for it in argv[1].split(','):
+      del_item(it)
     push_to_github(f'{time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())} delete item')
   except:
     print('please input site')
