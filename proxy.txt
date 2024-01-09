@@ -19,3 +19,4 @@ vmess://eyJhZGQiOiJra3l4Lnl5ZHNpaS5jb20iLCJhaWQiOjAsImhvc3QiOiJoa3l4LjY1MTU2OC54
 vmess://eyJhZGQiOiJ1cy5oZS4wMS5uZWtvY2xvdWQuY24iLCJhaWQiOjAsImhvc3QiOiIiLCJpZCI6IjljMmI2NGViLTAzZDgtM2NjNy05YmE2LTJlMjUwMDJmNTliNSIsIm5ldCI6IndzIiwicGF0aCI6Ii9jYXRuZXQiLCJwb3J0IjoxOTA0MywicHMiOiJcdTVFN0ZcdTRFMUNcdTc3MDFcdTVFN0ZcdTVEREVcdTVFMDIgXHU3OUZCXHU1MkE4IiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==
 trojan://af55f449-b9ee-4bec-9908-be1b18934dfa@xibaozi.19890604.day:10839?sni=cloudflare.node-ssl.cdn-alibaba.com#%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%20%E7%A7%BB%E5%8A%A8
 trojan://ab008897-edfa-41e4-9122-e56b9464c08e@xibaozi.19890604.day:10849?sni=cloudflare.node-ssl.cdn-alibaba.com#%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%20%E7%A7%BB%E5%8A%A8
+trojan://ab008897-edfa-41e4-9122-e56b9464c08e@xijinping.19890604.day:10811?sni=cloudflare.node-ssl.cdn-alibaba.com#%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%20%E7%A7%BB%E5%8A%A8
