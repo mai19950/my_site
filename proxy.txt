@@ -9,3 +9,4 @@ trojan://af55f449-b9ee-4bec-9908-be1b18934dfa@xibaozi.19890604.day:10839?sni=clo
 trojan://ab008897-edfa-41e4-9122-e56b9464c08e@xibaozi.19890604.day:10849?sni=cloudflare.node-ssl.cdn-alibaba.com#%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%20%E7%A7%BB%E5%8A%A8
 trojan://ab008897-edfa-41e4-9122-e56b9464c08e@xijinping.19890604.day:10811?sni=cloudflare.node-ssl.cdn-alibaba.com#%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%20%E7%A7%BB%E5%8A%A8
 vmess://eyJhZGQiOiIzZDZlMDQuYWJ6b29uZXMueHl6IiwiYWlkIjowLCJob3N0IjoiIiwiaWQiOiJhMDk4MTBmZS1mNTBkLTRkYjgtYmY5OC03YTQ3ZDlmZDBlZmYiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MzY4NDEsInBzIjoiXHVEODNDXHVEREU5XHVEODNDXHVEREVBXHU1RkI3XHU1NkZEMDQiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9
+trojan://27876_t7d7f4e3f@los16.ttddd.xyz:443?sni=los16.ttddd.xyz#%E5%8C%97%E7%BE%8E%E5%9C%B0%E5%8C%BA%20V2CROSS.COM
