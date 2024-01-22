@@ -12,3 +12,4 @@ trojan://27876_t7d7f4e3f@los16.ttddd.xyz:443?sni=los16.ttddd.xyz#%E5%8C%97%E7%BE
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co:443#%E8%8B%B1%E5%9B%BD%20%E4%BC%A6%E6%95%A6Amazon%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83
 trojan://72c433ae-7f01-4026-9291-25b0a66b7603@js-cn.jdyzyjd.xyz:40214?sni=chunshuan001.jindouyunjc.com#%E6%B1%9F%E8%8B%8F%E7%9C%81%E9%95%87%E6%B1%9F%E5%B8%82%20%E7%A7%BB%E5%8A%A8
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4OTM1NjJkMi0yZTM2LTRjODctYWViYy0zY2EzZmM3OGRlM2U=@nc.cn2.go002.xyz:19511#%E5%B9%BF%E4%B8%9C%E7%9C%81%20%E7%A7%BB%E5%8A%A8
+trojan://43fad462-cd67-5e80-a251-1145b94f9b0d@120.232.177.224:8302?sni=hk-2-561.duuk.info#%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%20%E7%A7%BB%E5%8A%A8
