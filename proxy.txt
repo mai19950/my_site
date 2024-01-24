@@ -13,3 +13,4 @@ vmess://eyJhZGQiOiIxMy4yMjYuMTIwLjIiLCJhaWQiOjAsImhvc3QiOiJqcGxpLmVkZ2UuMjMzLnR3
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0MzJmZTAyZi1iNjQ5LTRiZGMtOTFkOC1mOTFhZTg3MDAyZjc=@zhejiang.52vpn.top:19444#%E6%B2%B3%E5%8C%97%E7%9C%81%20%E4%B8%AD%E7%A7%BB%E9%93%81%E9%80%9A
 trojan://telegram-id-privatevpns@35.181.196.146:22222?sni=trojan.miwan.co.uk#%E6%B3%95%E5%9B%BD%20%E5%B7%B4%E9%BB%8EAmazon%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83
 trojan://telegram-id-directvpn@3.11.123.54:22222?sni=trj.rollingnext.co.uk#%E8%8B%B1%E5%9B%BD%20%E4%BC%A6%E6%95%A6Amazon%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83
+trojan://telegram-id-directvpn@3.11.170.62:22222?sni=trojan.miwan.co.uk#%E8%8B%B1%E5%9B%BD%20%E4%BC%A6%E6%95%A6Amazon%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83
