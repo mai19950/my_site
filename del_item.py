@@ -1,24 +1,35 @@
+import copy
 from sys import argv
-from add_proxy import *
+from model import *
+from color_log import Log
+
+class RemoveModel:
+  def __init__(self) -> None:
+    self.DataModel = ProxyData()
+    self.bak_data = copy.deepcopy(self.DataModel.data)
+    print(self.DataModel.index(-1))
 
 
-def del_item(item: str):
-  with open(join_dir('proxy.txt'), mode="r", encoding="utf8") as f:
-    data = f.readlines()
-  for it in data:
-    if item in it:
-      data.remove(it)
-  with open(join_dir('proxy.txt'), mode="w+", encoding="utf8") as f:
-    f.writelines(data)
-  with open(join_dir('proxy.base64'), mode="wb+") as f:
-    f.write(base64.b64encode(bytes('\n'.join(data), 'utf-8')))
+  def del_items(self, items: list):
+    for item in items:
+      self.bak_data.remove(item)
+    self.DataModel.save()
+
+  def del_item_from_index(self, index_list: list):
+    for index in index_list:
+      try:
+        self.DataModel.remove(self.bak_data[int(index)])
+      except Exception as e:
+        Log.error(e.args)
+        self.del_items(index_list)
+        break
+    self.DataModel.save()
 
 
 if __name__ == '__main__':
   try:
     # del_item(argv[1])
-    for it in argv[1].split(','):
-      del_item(it)
+    RemoveModel().del_item_from_index(argv[1].split(','))
     push_to_github(f'{time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())} delete item')
   except:
     print('please input site')
