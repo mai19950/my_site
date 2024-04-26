@@ -7,7 +7,7 @@ def update_proxy(items: str):
   data = ProxyData()
   for item in items.split(','):
     data.add(item)
-  Log.success(f'update {len(data)} proxy')
+  Log.success(f'update {data.length} proxy')
   data.save()
 
 
