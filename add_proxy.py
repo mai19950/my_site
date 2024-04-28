@@ -1,7 +1,5 @@
 from model import *
 from sys import argv
-from color_log import Log
-
 
 def update_proxy(items: str):
   data = ProxyData()

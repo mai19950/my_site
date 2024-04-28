@@ -1,13 +1,11 @@
 import copy
 from sys import argv
 from model import *
-from color_log import Log
 
 class RemoveModel:
   def __init__(self) -> None:
     self.DataModel = ProxyData()
     self.bak_data = copy.deepcopy(self.DataModel.data)
-    print(self.DataModel.index(-1))
 
 
   def del_items(self, items: list):

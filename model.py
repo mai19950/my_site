@@ -1,7 +1,8 @@
 
 import os
-import base64
 import time
+import base64
+from color_log import Log
 
 PROXY_FILE = "proxy.txt"
 BASE64_FILE = 'proxy.base64'
@@ -65,6 +66,7 @@ class ProxyData:
     return self
 
   def save(self):
+    Log.json(self.__PROXY_DATA__, 'cyan')
     with open(self.proxy_path, mode="w+", encoding="utf8") as f:
       f.write('\n'.join(self.__PROXY_DATA__))
     with open(self.base64_path, mode="wb+") as f:
