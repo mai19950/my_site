@@ -15,8 +15,9 @@ def deduplication(array: list) -> list:
   res = []
   for it in array:
     it = it.strip()
-    if it not in res:
-      res.append(it)
+    if it == "" or (it in res):
+      continue
+    res.append(it)
   return res
 
 
