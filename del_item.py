@@ -20,7 +20,7 @@ class RemoveModel:
       except Exception as e:
         Log.error(e.args)
         self.del_items(index_list)
-        break
+        return 
     self.DataModel.save()
 
 
