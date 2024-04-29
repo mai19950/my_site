@@ -7,6 +7,12 @@ from color_log import Log
 PROXY_FILE = "proxy.txt"
 BASE64_FILE = 'proxy.base64'
 
+LOCAL_PROXY = [
+  "socks5://192.168.10.104:1081#LOCAL",
+  "socks://192.168.10.104:1081#LOCAL",
+  "http://192.168.10.104:1082#LOCAL"
+]
+
 def join_dir(*paths):
   return os.path.join(os.path.dirname(os.path.abspath(__file__)), *paths)
 
@@ -32,6 +38,7 @@ class ProxyData:
   def __init__(self) -> None:
     self.proxy_path = join_dir(PROXY_FILE)
     self.base64_path = join_dir(BASE64_FILE)
+    self.__LOCAL_PROXY__ = LOCAL_PROXY
     self.__PROXY_DATA__ = []
     
     self.update_data_from_file()
@@ -44,12 +51,17 @@ class ProxyData:
   def length(self) -> int:
     return len(self.__PROXY_DATA__)
 
+  @classmethod
+  def filter_real_data(cls, data: list) -> list:
+    res = [it.strip() for it in data]
+    return list(filter(lambda x: (not x.endswith("#LOCAL")), res))
+
   def index(self, idx: int) -> str:
     return self.__PROXY_DATA__[idx]
 
   def update_data_from_file(self):
     with open(self.proxy_path, mode="r", encoding="utf8") as f:
-      self.__PROXY_DATA__ = [line.strip() for line in f.readlines()]
+      self.__PROXY_DATA__ = self.filter_real_data(f.readlines())
       return self
 
   def add(self, item: str):
@@ -72,11 +84,12 @@ class ProxyData:
 
   def save(self):
     # Log.json(self.__PROXY_DATA__, 'cyan')
+    save_data = self.__LOCAL_PROXY__ + self.__PROXY_DATA__
     self.show()
     with open(self.proxy_path, mode="w+", encoding="utf8") as f:
-      f.write('\n'.join(self.__PROXY_DATA__))
+      f.write('\n'.join(save_data))
     with open(self.base64_path, mode="wb+") as f:
-      f.write(base64.b64encode(bytes('\n'.join(self.__PROXY_DATA__), 'utf-8')))
+      f.write(base64.b64encode(bytes('\n'.join(save_data), 'utf-8')))
 
 
 if __name__ == '__main__':
