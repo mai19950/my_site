@@ -71,7 +71,6 @@ class ProxyData:
   def remove(self, item: str):
     for it in self.__PROXY_DATA__:
       if item in it:
-        print(item)
         self.__PROXY_DATA__.remove(it)    
         return self
 
@@ -83,7 +82,7 @@ class ProxyData:
     Log.cyan('\n'.join(self.__PROXY_DATA__))
     return self
 
-  def save(self):
+  def save(self, msg: str = ""):
     # Log.json(self.__PROXY_DATA__, 'cyan')
     save_data = self.__LOCAL_PROXY__ + self.__PROXY_DATA__
     self.show()
@@ -91,6 +90,7 @@ class ProxyData:
       f.write('\n'.join(save_data))
     with open(self.base64_path, mode="wb+") as f:
       f.write(base64.b64encode(bytes('\n'.join(save_data), 'utf-8')))
+    push_to_github(msg)
 
 
 if __name__ == '__main__':
