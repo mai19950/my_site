@@ -49,7 +49,7 @@ class ProxyData:
 
   def update_data_from_file(self):
     with open(self.proxy_path, mode="r", encoding="utf8") as f:
-      self.__PROXY_DATA__ = f.readlines()
+      self.__PROXY_DATA__ = [line.strip() for line in f.readlines()]
       return self
 
   def add(self, item: str):
@@ -66,9 +66,18 @@ class ProxyData:
     self.__PROXY_DATA__ = data
     return self
 
+  def show(self):
+    Log.cyan('\n'.join(self.__PROXY_DATA__))
+    return self
+
   def save(self):
-    Log.json(self.__PROXY_DATA__, 'cyan')
+    # Log.json(self.__PROXY_DATA__, 'cyan')
+    self.show()
     with open(self.proxy_path, mode="w+", encoding="utf8") as f:
       f.write('\n'.join(self.__PROXY_DATA__))
     with open(self.base64_path, mode="wb+") as f:
       f.write(base64.b64encode(bytes('\n'.join(self.__PROXY_DATA__), 'utf-8')))
+
+
+if __name__ == '__main__':
+  ProxyData().show()
