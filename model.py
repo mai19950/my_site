@@ -71,6 +71,7 @@ class ProxyData:
   def remove(self, item: str):
     for it in self.__PROXY_DATA__:
       if item in it:
+        print(item)
         self.__PROXY_DATA__.remove(it)    
         return self
 
