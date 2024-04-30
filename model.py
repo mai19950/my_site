@@ -68,6 +68,10 @@ class ProxyData:
     self.__PROXY_DATA__ = deduplication(self.__PROXY_DATA__ + [item])
     return self
 
+  def clear(self):
+    self.__PROXY_DATA__ = []
+    return self
+
   def remove(self, item: str):
     for it in self.__PROXY_DATA__:
       if item in it:
@@ -82,7 +86,7 @@ class ProxyData:
     Log.cyan('\n'.join(self.__PROXY_DATA__))
     return self
 
-  def save(self, msg: str = ""):
+  def save(self, msg: str = str(time.localtime())):
     # Log.json(self.__PROXY_DATA__, 'cyan')
     save_data = self.__LOCAL_PROXY__ + self.__PROXY_DATA__
     self.show()

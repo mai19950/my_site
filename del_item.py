@@ -16,6 +16,8 @@ class RemoveModel:
 
   def del_item_from_index(self, index_list: list):
     for index in index_list:
+      if index == "all":
+        self.DataModel.clear().save(self.git_msg)
       try:
         self.DataModel.remove(self.bak_data[int(index)])
       except Exception as e:
