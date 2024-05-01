@@ -10,6 +10,7 @@ BASE64_FILE = 'proxy.base64'
 LOCAL_PROXY = [
   "socks5://192.168.10.104:1081#LOCAL",
   "socks://192.168.10.104:1081#LOCAL",
+  "socks://Og==@192.168.10.104:1081#LOCAL",
   "http://192.168.10.104:1082#LOCAL"
 ]
 
