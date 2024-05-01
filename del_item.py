@@ -18,6 +18,7 @@ class RemoveModel:
     for index in index_list:
       if index == "all":
         self.DataModel.clear().save(self.git_msg)
+        exit("clear all data")
       try:
         self.DataModel.remove(self.bak_data[int(index)])
       except Exception as e:
