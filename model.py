@@ -11,6 +11,9 @@ LOCAL_PROXY = [
   "socks5://192.168.10.104:1081#LOCAL",
   "socks://192.168.10.104:1081#LOCAL",
   "socks://Og==@192.168.10.104:1081#LOCAL",
+  "socks://192.168.10.101:9988#LOCAL_IPAD",
+  "socks5://192.168.10.101:9988#LOCAL_IPAD",
+  "socks://Og==192.168.10.101:9988#LOCAL_IPAD",
   "http://192.168.10.104:1082#LOCAL"
 ]
 
@@ -55,7 +58,7 @@ class ProxyData:
   @classmethod
   def filter_real_data(cls, data: list) -> list:
     res = [it.strip() for it in data]
-    return list(filter(lambda x: (not x.endswith("#LOCAL")), res))
+    return list(filter(lambda x: ("#LOCAL" not in x), res))
 
   def index(self, idx: int) -> str:
     return self.__PROXY_DATA__[idx]
