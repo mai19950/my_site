@@ -33,5 +33,6 @@ if __name__ == '__main__':
     # del_item(argv[1])
     RemoveModel().del_item_from_index(argv[1].split(','))
     # push_to_github(f'{time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())} delete item')
-  except:
+  except Exception as e:
+    Log.error(e.args)
     print('please input site')
