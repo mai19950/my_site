@@ -2,7 +2,7 @@
 import os
 import time
 import base64
-from color_log import Log
+from color_log import *
 
 PROXY_FILE = "proxy.txt"
 BASE64_FILE = 'proxy.base64'

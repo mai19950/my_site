@@ -18,7 +18,7 @@ class RemoveModel:
     for index in index_list:
       if index == "all":
         self.DataModel.clear().save(self.git_msg)
-        exit("clear all data")
+        exit(Text.red_bg("clear all data"))
       try:
         self.DataModel.remove(self.bak_data[int(index)])
       except Exception as e:
@@ -33,6 +33,5 @@ if __name__ == '__main__':
     # del_item(argv[1])
     RemoveModel().del_item_from_index(argv[1].split(','))
     # push_to_github(f'{time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())} delete item')
-  except Exception as e:
-    Log.error(e.args)
-    print('please input site')
+  except:
+    Log.error('please input site')
