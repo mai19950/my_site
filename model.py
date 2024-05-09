@@ -7,8 +7,8 @@ from color_log import *
 PROXY_FILE = "proxy.txt"
 BASE64_FILE = 'proxy.base64'
 
-PC_IP = "192.168.10.104"
-IPAD_IP = "192.168.10.101"
+PC_IP = "192.168.0.110"
+IPAD_IP = "192.168.0.112"
 
 LOCAL_PROXY = [
   f"socks5://{PC_IP}:1081#LOCAL",
