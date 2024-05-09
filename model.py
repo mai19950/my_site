@@ -7,14 +7,17 @@ from color_log import *
 PROXY_FILE = "proxy.txt"
 BASE64_FILE = 'proxy.base64'
 
+PC_IP = "192.168.10.104"
+IPAD_IP = "192.168.10.101"
+
 LOCAL_PROXY = [
-  "socks5://192.168.10.104:1081#LOCAL",
-  "socks://192.168.10.104:1081#LOCAL",
-  "socks://Og==@192.168.10.104:1081#LOCAL",
-  "socks://192.168.10.101:9988#LOCAL_IPAD",
-  "socks5://192.168.10.101:9988#LOCAL_IPAD",
-  "socks://Og==192.168.10.101:9988#LOCAL_IPAD",
-  "http://192.168.10.104:1082#LOCAL"
+  f"socks5://{PC_IP}:1081#LOCAL",
+  f"socks://{PC_IP}:1081#LOCAL",
+  f"socks://Og==@{PC_IP}:1081#LOCAL",
+  f"socks://{IPAD_IP}:9988#LOCAL_IPAD",
+  f"socks5://{IPAD_IP}:9988#LOCAL_IPAD",
+  f"socks://Og=={IPAD_IP}:9988#LOCAL_IPAD",
+  f"http://{PC_IP}:1082#LOCAL"
 ]
 
 def join_dir(*paths):
