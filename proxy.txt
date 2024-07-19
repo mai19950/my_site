@@ -6,3 +6,4 @@ socks5://192.168.0.112:9988#LOCAL_IPAD
 socks://Og==192.168.0.112:9988#LOCAL_IPAD
 http://192.168.0.110:1082#LOCAL
 vless://37a0bd7c-8b9f-4693-8916-bd1e2da0a817@mai.cloudns.ch:36637?flow=&security=none&encryption=none&type=ws&host=mai.cloudns.ch&path=/&sni=&fp=&pbk=&sid=#pm2-serv00
+vless://33999e12-ab80-4e36-a8d4-b1eaecc0a042@mai.cloudns.ch:12258?flow=&security=none&encryption=none&type=ws&host=mai.cloudns.ch&path=/&sni=&fp=&pbk=&sid=#serv00.vless
