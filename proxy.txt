@@ -6,3 +6,4 @@ socks5://192.168.0.112:9988#LOCAL_IPAD
 socks://Og==192.168.0.112:9988#LOCAL_IPAD
 http://192.168.0.110:1082#LOCAL
 vless://33999e12-ab80-4e36-a8d4-b1eaecc0a042@mai.cloudns.ch:12258?flow=&security=none&encryption=none&type=ws&host=mai.cloudns.ch&path=/&sni=&fp=&pbk=&sid=#serv00.vless
+trojan://mai@198.62.62.102:443?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#US
