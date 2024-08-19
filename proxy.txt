@@ -12,3 +12,4 @@ trojan://mai@47.237.8.82:2087?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=r
 trojan://mai@137.184.179.248:9929?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#US
 trojan://mai@91.149.239.198:443?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#US
 trojan://mai@104.19.52.111:443?security=tls
+trojan://mai@104.19.52.111:443?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#CT
