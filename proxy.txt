@@ -8,8 +8,5 @@ http://192.168.0.110:1082#LOCAL
 vless://33999e12-ab80-4e36-a8d4-b1eaecc0a042@mai.cloudns.ch:12258?flow=&security=none&encryption=none&type=ws&host=mai.cloudns.ch&path=/&sni=&fp=&pbk=&sid=#serv00.vless
 ss://YWVzLTEyOC1nY206M2M5N2I5ODMtMTEwMy00ZGZlLThlNjgtMGZhNGQyZTY0ZmY5@ununim.yangliq.com:23003#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%2003
 ss://YWVzLTEyOC1nY206M2M5N2I5ODMtMTEwMy00ZGZlLThlNjgtMGZhNGQyZTY0ZmY5@ununim.yangliq.com:24003#%F0%9F%87%AF%F0%9F%87%B5%20%E6%97%A5%E6%9C%AC%2003
-trojan://mai@47.237.8.82:2087?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.sg.fxxk.dedyn.io#SG
-trojan://mai@137.184.179.248:9929?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#US
-trojan://mai@91.149.239.198:443?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#US
 trojan://mai@104.19.52.111:443?security=tls
 trojan://mai@104.19.52.111:443?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#CT
