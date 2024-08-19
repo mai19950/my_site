@@ -10,3 +10,4 @@ ss://YWVzLTEyOC1nY206M2M5N2I5ODMtMTEwMy00ZGZlLThlNjgtMGZhNGQyZTY0ZmY5@ununim.yan
 ss://YWVzLTEyOC1nY206M2M5N2I5ODMtMTEwMy00ZGZlLThlNjgtMGZhNGQyZTY0ZmY5@ununim.yangliq.com:24003#%F0%9F%87%AF%F0%9F%87%B5%20%E6%97%A5%E6%9C%AC%2003
 trojan://mai@104.19.52.111:443?security=tls
 trojan://mai@104.19.52.111:443?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.oracle.fxxk.dedyn.io#CT
+trojan://mai@198.62.62.233:443?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#US
