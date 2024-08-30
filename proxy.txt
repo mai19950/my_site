@@ -6,8 +6,6 @@ socks5://192.168.0.112:9988#LOCAL_IPAD
 socks://Og==192.168.0.112:9988#LOCAL_IPAD
 http://192.168.0.110:1082#LOCAL
 vless://33999e12-ab80-4e36-a8d4-b1eaecc0a042@mai.cloudns.ch:12258?flow=&security=none&encryption=none&type=ws&host=mai.cloudns.ch&path=/&sni=&fp=&pbk=&sid=#serv00.vless
-ss://YWVzLTEyOC1nY206M2M5N2I5ODMtMTEwMy00ZGZlLThlNjgtMGZhNGQyZTY0ZmY5@ununim.yangliq.com:23003#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%2003
-ss://YWVzLTEyOC1nY206M2M5N2I5ODMtMTEwMy00ZGZlLThlNjgtMGZhNGQyZTY0ZmY5@ununim.yangliq.com:24003#%F0%9F%87%AF%F0%9F%87%B5%20%E6%97%A5%E6%9C%AC%2003
 trojan://mai@198.62.62.233:443?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.us.fxxk.dedyn.io#US
 trojan://mai@8.219.104.37:2053?security=tls&sni=trojan.mai9900.us.kg&alpn=h3&fp=randomized&type=ws&host=trojan.mai9900.us.kg&path=%2F%3Fproxyip%3Dproxyip.sg.fxxk.dedyn.io#SG
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyNWY2NzA1Yy0xNmYwLTRjMzQtYjM3MC01ZThlNjZmYTMyMzg=@6bhz.6bnw.top:19527#%E9%A6%99%E6%B8%AF2%7C%40ripaojiedian
