@@ -6,6 +6,7 @@ socks5://192.168.0.112:9988#LOCAL_IPAD
 socks://Og==192.168.0.112:9988#LOCAL_IPAD
 http://192.168.0.110:1082#LOCAL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNTU3ZjhlNy01NTI0LTRiYWQtOTkzNi0xNzg2ZWI2ZTg2MDI%3D@ap-east-a1.qiniu-video.com:41141#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF01%20%7C%201x%20HK
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNTU3ZjhlNy01NTI0LTRiYWQtOTkzNi0xNzg2ZWI2ZTg2MDI%3D@ap-east-a3.qiniu-video.com:41121#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC06%20%7C%20%E5%AE%B6%E5%AE%BD%20%7C%201x%20JP
 vless://246aa795-0637-4f4c-8f64-2c8fb24c1bad@join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz:443?encryption=none&security=tls&sni=TG.CMLiussss.loseyourip.com&alpn=http%2F1.1&fp=random&type=ws&host=TG.CMLiussss.loseyourip.com&path=%2FJoin_my_telegram_channel_CMLiussss_to_unlock_more_premium_nodes%3Fed%3D2560#CMLiussss
 vless://246aa795-0637-4f4c-8f64-2c8fb24c1bad@104.19.42.204:443?encryption=none&security=tls&sni=TG.CMLiussss.loseyourip.com&alpn=http%2F1.1&fp=random&type=ws&host=TG.CMLiussss.loseyourip.com&path=%2FJoin_my_telegram_channel_CMLiussss_to_unlock_more_premium_nodes%3Fed%3D2560#CMCC
 vless://246aa795-0637-4f4c-8f64-2c8fb24c1bad@104.19.34.83:443?encryption=none&security=tls&sni=TG.CMLiussss.loseyourip.com&alpn=http%2F1.1&fp=random&type=ws&host=TG.CMLiussss.loseyourip.com&path=%2FJoin_my_telegram_channel_CMLiussss_to_unlock_more_premium_nodes%3Fed%3D2560#CMCC
