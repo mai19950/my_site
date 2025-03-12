@@ -8,11 +8,4 @@ http://192.168.0.110:1082#LOCAL
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNTU3ZjhlNy01NTI0LTRiYWQtOTkzNi0xNzg2ZWI2ZTg2MDI%3D@ap-east-a1.qiniu-video.com:41141#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF01%20%7C%201x%20HK
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNTU3ZjhlNy01NTI0LTRiYWQtOTkzNi0xNzg2ZWI2ZTg2MDI%3D@ap-east-a3.qiniu1-video.com:41145#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF03%20%7C%20%E5%AE%B6%E5%AE%BD%20%7C%201x%20HK
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNTU3ZjhlNy01NTI0LTRiYWQtOTkzNi0xNzg2ZWI2ZTg2MDI%3D@ap-east-a3.qiniu-video.com:41121#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC06%20%7C%20%E5%AE%B6%E5%AE%BD%20%7C%201x%20JP
-hysteria2://4ce4d6a7-e47c-4d80-800c-bf874479c9b0@jp-oracle.aikunapp.com:5001?sni=d1--cn-gotcha204-4.bilivideo.com&insecure=1#%E6%96%B0%E5%8A%A0%E5%9D%A11%20%7C%20%E2%AC%87%EF%B8%8F%2012.0MB%2Fs
-hysteria2://9a03f64f-ee39-419f-9234-e542d5eea22a@yiyuankuailian-sg.jiumaojiu.org:21006?sni=yiyuankuailian-sg.jiumaojiu.org&insecure=1#%E6%96%B0%E5%8A%A0%E5%9D%A112%20%7C%20%E2%AC%87%EF%B8%8F%208.7MB%2Fs
-hysteria2://wT6ydpR9hrVKXvbMnrHwOoRLeBM@18.217.36.213:25534?sni=bing.com&insecure=1#%E7%BE%8E%E5%9B%BD15%20%7C%20%E2%AC%87%EF%B8%8F%2016.3MB%2Fs
-hysteria2://a3661fb3-b0ab-4022-ba5c-7c0ef0e01db8@207.180.248.7:37732?sni=www.bing.com&insecure=1#%E6%B3%95%E5%9B%BD5%20%7C%20%E2%AC%87%EF%B8%8F%207.7MB%2Fs
-hysteria2://9a03f64f-ee39-419f-9234-e542d5eea22a@yiyuankuailian-hk.jiumaojiu.org:21023?sni=yiyuankuailian-hk.jiumaojiu.org&insecure=1#%E9%A6%99%E6%B8%AF10%20%7C%20%E2%AC%87%EF%B8%8F%201.3MB%2Fs
-hysteria2://6b1d94de-2034-4948-9fa6-5191efc34c11@pianyi-us.jiumaojiu.org:20109?sni=pianyi-us.jiumaojiu.org&insecure=1#%E7%BE%8E%E5%9B%BD30%20%7C%20%E2%AC%87%EF%B8%8F%2018.4MB%2Fs
 hysteria2://4d2845af-f33a-4ca6-bfde-33e9b7f300cf@185.22.152.236:33007?obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ%3D%3D&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF3%20%7C%20%E2%AC%87%EF%B8%8F%201.1MB%2Fs
-hysteria2://9a03f64f-ee39-419f-9234-e542d5eea22a@yiyuankuailian-hk.jiumaojiu.org:21051?sni=yiyuankuailian-hk.jiumaojiu.org&insecure=1#%E9%A6%99%E6%B8%AF16%20%7C%20%E2%AC%87%EF%B8%8F%2010.4MB%2Fs
