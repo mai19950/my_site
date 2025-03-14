@@ -5,7 +5,9 @@ socks://192.168.0.112:9988#LOCAL_IPAD
 socks5://192.168.0.112:9988#LOCAL_IPAD
 socks://Og==192.168.0.112:9988#LOCAL_IPAD
 http://192.168.0.110:1082#LOCAL
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNTU3ZjhlNy01NTI0LTRiYWQtOTkzNi0xNzg2ZWI2ZTg2MDI%3D@ap-east-a1.qiniu-video.com:41141#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF01%20%7C%201x%20HK
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNTU3ZjhlNy01NTI0LTRiYWQtOTkzNi0xNzg2ZWI2ZTg2MDI%3D@ap-east-a3.qiniu1-video.com:41145#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF03%20%7C%20%E5%AE%B6%E5%AE%BD%20%7C%201x%20HK
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNTU3ZjhlNy01NTI0LTRiYWQtOTkzNi0xNzg2ZWI2ZTg2MDI%3D@ap-east-a3.qiniu-video.com:41121#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC06%20%7C%20%E5%AE%B6%E5%AE%BD%20%7C%201x%20JP
 hysteria2://4d2845af-f33a-4ca6-bfde-33e9b7f300cf@185.22.152.236:33007?obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ%3D%3D&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF3%20%7C%20%E2%AC%87%EF%B8%8F%201.1MB%2Fs
+hysteria2://a3661fb3-b0ab-4022-ba5c-7c0ef0e01db8@207.180.248.7:37732?sni=www.bing.com&insecure=1#%E6%B3%95%E5%9B%BD3%20%7C%20%E2%AC%87%EF%B8%8F%2011.9MB%2Fs
+hysteria2://__mPDL8oqKjx2v2VpdSfG0g4@starlink-tko.2513142.xyz:443?sni=www.cloudflare.com&insecure=1#%E6%97%A5%E6%9C%AC34%20%7C%20%E2%AC%87%EF%B8%8F%2033.1MB%2Fs
+hysteria2://dongtaiwang.com@46.29.163.171:18626?sni=www.bing.com&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF1%20%7C%20%E2%AC%87%EF%B8%8F%202.6MB%2Fs
+hysteria2://b79ef901-eae9-4cd3-b2e2-e9464ec0fa25@185.22.152.236:33007?obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ%3D%3D&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF3%20%7C%20%E2%AC%87%EF%B8%8F%201.7MB%2Fs
+hysteria2://dongtaiwang.com@46.17.41.217:37481?sni=www.bing.com&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF5%20%7C%20%E2%AC%87%EF%B8%8F%2010.0MB%2Fs
