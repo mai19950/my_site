@@ -9,3 +9,6 @@ hysteria2://a3661fb3-b0ab-4022-ba5c-7c0ef0e01db8@207.180.248.7:37732?sni=www.bin
 hysteria2://dongtaiwang.com@46.29.163.171:18626?sni=www.bing.com&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF1
 hysteria2://b79ef901-eae9-4cd3-b2e2-e9464ec0fa25@185.22.152.236:33007?obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ%3D%3D&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF3
 hysteria2://dongtaiwang.com@46.17.41.217:37481?sni=www.bing.com&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF5
+hysteria2://be758973-186d-46fe-8aa4-e017134fa291@31.186.87.211:4029?sni=www.bing.com&insecure=1#%E6%B3%A2%E5%85%B01
+hysteria2://a962e5b8-93a5-4597-8ce4-0de3688d3523@46.17.43.122:32006?obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ%3D%3D&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF51
+hysteria2://239d39e5-d1e4-486c-8fa3-5a9ec88b29af@212.192.13.68:33007?obfs=salamander&obfs-password=M2UyNTc5OWUwYjkyM2Q2OQ%3D%3D&insecure=1#%E9%A6%99%E6%B8%AF00
