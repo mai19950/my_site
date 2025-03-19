@@ -12,3 +12,5 @@ hysteria2://dongtaiwang.com@46.17.41.217:37481?sni=www.bing.com&insecure=1#%E4%B
 hysteria2://be758973-186d-46fe-8aa4-e017134fa291@31.186.87.211:4029?sni=www.bing.com&insecure=1#%E6%B3%A2%E5%85%B01
 hysteria2://a962e5b8-93a5-4597-8ce4-0de3688d3523@46.17.43.122:32006?obfs=salamander&obfs-password=NDhhNmY5YTY0MGYzOTgxYQ%3D%3D&insecure=1#%E4%BF%84%E7%BD%97%E6%96%AF51
 hysteria2://239d39e5-d1e4-486c-8fa3-5a9ec88b29af@212.192.13.68:33007?obfs=salamander&obfs-password=M2UyNTc5OWUwYjkyM2Q2OQ%3D%3D&insecure=1#%E9%A6%99%E6%B8%AF00
+hysteria2://0aed82ca-fd08-11ef-8cf9-f23c93136cb3@107.167.18.123:443?sni=06a68208-st69s0-su9bm5-1phl.la.shifen.uk&insecure=1#%E7%BE%8E%E5%9B%BD0001
+hysteria2://5CBqBh6MeDq6GajcilBiDg%3D%3D@192-227-152-86.nip.io:61001?sni=192-227-152-86.nip.io&insecure=1#%E7%BE%8E%E5%9B%BD0002
