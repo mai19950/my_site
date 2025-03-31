@@ -23,3 +23,4 @@ hysteria2://dongtaiwang.com@108.181.5.130:15544?sni=apple.com&insecure=1#%E7%BE%
 hysteria2://914e64f7-f8e6-44ce-9e5a-97669a18d605@jp.tuanzi.xyz:20701?sni=jp.tuanzi.xyz&insecure=1#%E6%97%A5%E6%9C%AC20701
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlx1NkNENVx1NTZGRDQ0MyIsDQogICJhZGQiOiAiMTA0LjIxLjk0LjY0IiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM5Y2VjMThmLWE0MzktNDI3Yy05YTRlLWFlYjZmY2RmNmY1MyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAibGluamEwNS5od2Nhci5zYnMiLA0KICAicGF0aCI6ICIvbGlua3dzIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogImxpbmphMDUuaHdjYXIuc2JzIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
 vless://0a44145f-59dc-4e5b-a233-677b97f5114c@135.148.186.250:443?encryption=none&security=tls&sni=147135011033.sec21org.com&allowInsecure=1&type=tcp&headerType=none#%E7%BE%8E%E5%9B%BD4430
+hysteria2://dongtaiwang.com@51.159.226.1:61770?sni=www.bing.com&insecure=1#%E6%B3%95%E5%9B%BD61770
