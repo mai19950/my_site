@@ -1,0 +1,17 @@
+proxies:
+
+  - {"name": "LOCAL", "type": "socks5", "server": "192.168.0.110", "port": 1081}
+  - {"name": "LOCAL_1", "type": "socks5", "server": "192.168.0.110", "port": 1081}
+  - {"name": "LOCAL_IPAD", "type": "socks5", "server": "192.168.0.112", "port": 9988}
+  - {"name": "LOCAL_IPAD_1", "type": "socks5", "server": "192.168.0.112", "port": 9988}
+  - {"name": "美国5300", "type": "hysteria2", "server": "192-227-152-86.nip.io", "port": 61001, "password": "5CBqBh6MeDq6GajcilBiDg==", "skip-cert-verify": true, "sni": "192-227-152-86.nip.io"}
+  - {"type": "vless", "name": "台湾10000", "server": "gy01.hunheiydd.xyz", "port": 15823, "uuid": "459b4a80-bd61-4ecd-a26b-e9c1809d9e45", "skip-cert-verify": true, "udp": true, "tls": false, "network": "tcp", "servername": "www.yahoo.com"}
+  - {"type": "vless", "name": "日本99999", "server": "csuzhou01.1cooldns.com", "port": 14548, "uuid": "459b4a80-bd61-4ecd-a26b-e9c1809d9e45", "skip-cert-verify": true, "udp": true, "tls": false, "network": "tcp", "servername": "www.nvidia.com"}
+  - {"type": "vless", "name": "香港777", "server": "test123.zlqhdns.top", "port": 10860, "uuid": "459b4a80-bd61-4ecd-a26b-e9c1809d9e45", "skip-cert-verify": true, "udp": true, "tls": false, "network": "tcp", "servername": "www.nvidia.com"}
+  - {"type": "vless", "name": "美国46372", "server": "zhee01.dynu.net", "port": 46372, "uuid": "459b4a80-bd61-4ecd-a26b-e9c1809d9e45", "skip-cert-verify": true, "udp": true, "tls": false, "network": "tcp", "servername": "www.amazon.com"}
+  - {"name": "美国15544", "type": "hysteria2", "server": "108.181.5.130", "port": 15544, "password": "dongtaiwang.com", "skip-cert-verify": true, "sni": "apple.com"}
+  - {"name": "法国61770", "type": "hysteria2", "server": "51.159.226.1", "port": 61770, "password": "dongtaiwang.com", "skip-cert-verify": true, "sni": "www.bing.com"}
+  - {"name": "美国47262", "type": "hysteria2", "server": "164.152.19.229", "port": 47262, "password": "b72ba5d5-2d5e-45b7-93b5-236d343baa7c", "skip-cert-verify": true, "sni": "www.bing.com"}
+  - {"type": "vless", "name": "日本13989", "server": "csuzhou01.1cooldns.com", "port": 13989, "uuid": "459b4a80-bd61-4ecd-a26b-e9c1809d9e45", "skip-cert-verify": true, "udp": true, "tls": false, "network": "tcp", "servername": "gateway.icloud.com"}
+  - {"name": "美国8443", "type": "hysteria2", "server": "a0ee1004-sum4g0-t7qex7-1supq.hy2.gotochinatown.net", "port": 8443, "password": "7af3db60-b2d9-11ef-88ab-f23c913c8d2b", "skip-cert-verify": true, "sni": "a0ee1004-sum4g0-t7qex7-1supq.hy2.gotochinatown.net"}
+  - {"type": "vless", "name": "美国8080", "server": "45.131.4.73", "port": 8080, "uuid": "c5293efa-28f8-4a0f-8f34-541078970cee", "skip-cert-verify": true, "udp": true, "tls": false, "network": "ws", "servername": "gozargah.validbv7996.ir", "ws-opts": {"path": "/", "headers": {"Host": "gozargah.validbv7996.ir"}}}

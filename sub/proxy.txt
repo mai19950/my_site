@@ -1,9 +1,7 @@
 socks5://192.168.0.110:1081#LOCAL
 socks://192.168.0.110:1081#LOCAL
-socks://Og==@192.168.0.110:1081#LOCAL
 socks://192.168.0.112:9988#LOCAL_IPAD
 socks5://192.168.0.112:9988#LOCAL_IPAD
-socks://Og==192.168.0.112:9988#LOCAL_IPAD
 http://192.168.0.110:1082#LOCAL
 hysteria2://5CBqBh6MeDq6GajcilBiDg%3D%3D@192-227-152-86.nip.io:61001?sni=192-227-152-86.nip.io&insecure=1#%E7%BE%8E%E5%9B%BD5300
 vless://459b4a80-bd61-4ecd-a26b-e9c1809d9e45@gy01.hunheiydd.xyz:15823?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY&allowInsecure=1&type=tcp&headerType=none#%E5%8F%B0%E6%B9%BE10000

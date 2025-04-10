@@ -3,10 +3,12 @@ import os
 import time
 import base64
 from color_log import *
+from clash_handler.main import *
 
 SUB_DIR = "sub"
 PROXY_FILE = f"{SUB_DIR}/proxy.txt"
 BASE64_FILE = f"{SUB_DIR}/proxy.base64"
+YAML_FILE = f"{SUB_DIR}/proxy.yaml"
 
 PC_IP = "192.168.0.110"
 IPAD_IP = "192.168.0.112"
@@ -14,10 +16,10 @@ IPAD_IP = "192.168.0.112"
 LOCAL_PROXY = [
   f"socks5://{PC_IP}:1081#LOCAL",
   f"socks://{PC_IP}:1081#LOCAL",
-  f"socks://Og==@{PC_IP}:1081#LOCAL",
+  # f"socks://Og==@{PC_IP}:1081#LOCAL",
   f"socks://{IPAD_IP}:9988#LOCAL_IPAD",
   f"socks5://{IPAD_IP}:9988#LOCAL_IPAD",
-  f"socks://Og=={IPAD_IP}:9988#LOCAL_IPAD",
+  # f"socks://Og=={IPAD_IP}:9988#LOCAL_IPAD",
   f"http://{PC_IP}:1082#LOCAL"
 ]
 
@@ -46,6 +48,7 @@ class ProxyData:
   def __init__(self) -> None:
     self.proxy_path = join_dir(PROXY_FILE)
     self.base64_path = join_dir(BASE64_FILE)
+    self.yaml_path = join_dir(YAML_FILE)
     self.__LOCAL_PROXY__ = LOCAL_PROXY
     self.__PROXY_DATA__ = []
     
@@ -94,9 +97,17 @@ class ProxyData:
     Log.cyan('\n'.join(self.__PROXY_DATA__))
     return self
 
+  def to_yaml(self, data: list):
+    nodes = CollectNodes().parse(data)
+    nodes = ClashConfig.to_yaml(nodes.nodes, indent=2)
+    # print(nodes)
+    with open(self.yaml_path, mode="w+", encoding="utf8") as f:
+      f.write("proxies:\n" + nodes)
+
   def save(self, msg: str = str(time.localtime())):
     # Log.json(self.__PROXY_DATA__, 'cyan')
     save_data = self.__LOCAL_PROXY__ + self.__PROXY_DATA__
+    self.to_yaml(save_data)
     self.show()
     with open(self.proxy_path, mode="w+", encoding="utf8") as f:
       f.write('\n'.join(save_data))
