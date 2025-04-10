@@ -66,12 +66,12 @@ proxy-groups:
 #分流分组
   - {name: 🚀 手动切换, <<: *a2}
   - {name: 🌏 全球加速, <<: *a3}
-  - {name: 🍎 苹果服务, <<: *a3}
-  - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
   - {name: 🤖 OpenAi,   type: select, proxies: [🇺🇲 美国节点]}
   - {name: 🎬 国际媒体, <<: *a3}
-  - {name: 🌌 谷歌服务, <<: *a3}
   - {name: 📟 电报消息, <<: *a3}
+  - {name: 🌌 谷歌服务, <<: *a3}
+  - {name: 🍎 苹果服务, <<: *a3}
+  - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
   - {name: 🐦 推特服务, <<: *a3}
   - {name: 🎮 游戏平台, <<: *a3}
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT]}
