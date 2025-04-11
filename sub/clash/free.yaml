@@ -45,48 +45,19 @@ dns:
 #========= 建立锚点 =========#
 
 # 策略组引用
-sub: &s1
-  - abshare
-  - abshare3
-  - tolinkshare2
-  - toshare5
-  - mksshare
-  - mkshare3
-
-
 pr:   &a3 {type: select,   proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT] }
 p:    &a1 {type: http,     interval: 900,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300} }
-auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 300, use: *s1 }
-use:  &a2 {type: select,   use: *s1 }
+auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 300, use: [free] }
+use:  &a2 {type: select,   use: [free] }
 c:    &a6 {type: http,     behavior: classical, interval: 86400}
 d:    &a5 {type: http,     behavior: domain,    interval: 86400}
 i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 
 proxy-providers:
-  abshare:
+  free:
     <<: *a1
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/abshare.yaml
-    path: ./proxy_providers/abshare.yaml
-  abshare3:
-    <<: *a1
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/abshare3.yaml
-    path: ./proxy_providers/abshare3.yaml
-  tolinkshare2:
-    <<: *a1
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/tolinkshare2.yaml
-    path: ./proxy_providers/tolinkshare2.yaml
-  toshare5:
-    <<: *a1
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/toshare5.yaml
-    path: ./proxy_providers/toshare5.yaml
-  mksshare:
-    <<: *a1
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/mksshare.yaml
-    path: ./proxy_providers/mksshare.yaml
-  mkshare3:
-    <<: *a1
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/mkshare3.yaml
-    path: ./proxy_providers/mkshare3.yaml
+    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/free
+    path: ./proxy_providers/free.yaml
     
 proxies: null
 proxy-groups:
