@@ -2,10 +2,13 @@
 # AUTHOR: mai19950
 # REPO: https://raw.githubusercontent.com/mai19950/my_site/refs/heads/main/sub/customs/proxy.yaml
 payload:
+  - DOMAIN-SUFFIX,shise.me
+  - DOMAIN-SUFFIX,missav.ai
+  - DOMAIN-SUFFIX,www.minnano-av.com
+  - DOMAIN-SUFFIX,www.pexels.com
   - DOMAIN-SUFFIX,javlibrary.com
   - DOMAIN-KEYWORD,javlibrary
   - DOMAIN-SUFFIX,786551.xyz
-  - DOMAIN-SUFFIX,jsdelivr.net
   - DOMAIN-SUFFIX,cdn-centaurus.com
   - DOMAIN-SUFFIX,us.kg
   - DOMAIN-SUFFIX,milocdn.com
@@ -212,7 +215,6 @@ payload:
   - DOMAIN-SUFFIX,chillgrillkrillwhale.nl.eu.org
   - DOMAIN-SUFFIX,emturbovid.com
   - DOMAIN-SUFFIX,missav.com
-  - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-SUFFIX,javmost.com
   - DOMAIN-SUFFIX,javtrailers.com
   - DOMAIN-SUFFIX,xslist.org

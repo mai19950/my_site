@@ -63,8 +63,17 @@ proxy-providers:
   git:
     <<: *a1
     interval: 86400
-    url: https://raw.githubusercontent.com/mai19950/my_site/main/sub/proxy.yaml
     path: ./proxy_providers/git.yaml
+    url: https://raw.githubusercontent.com/mai19950/my_site/main/sub/proxy.yaml
+  # local:
+  #   type: file
+  #   path: ./proxy_providers/local.yaml
+  #   format: yaml
+  # free:
+  #   <<: *a1
+  #   interval: 900
+  #   path: ./proxy_providers/free.yaml
+  #   url: https://**/free
     
 proxies: null
 proxy-groups:

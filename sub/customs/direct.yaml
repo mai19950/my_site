@@ -4,5 +4,5 @@
 payload:
   - DOMAIN-SUFFIX,skrbtzc.top
   - DOMAIN-SUFFIX,githubusercontent.com
-  - DOMAIN-SUFFIX,jsdelivr.net
+  - DOMAIN-SUFFIX,cdn.jsdelivr.net
   - IP-CIDR,192.168.0.0/16  # 匹配所有 192.168.x.x

@@ -4,7 +4,7 @@ import time
 import base64
 from color_log import *
 from clash_handler.main import *
-from set_yaml import add_nodes_to_clash
+from update_yaml import add_nodes_to_clash
 
 SUB_DIR = "sub"
 PROXY_FILE = f"{SUB_DIR}/proxy.txt"

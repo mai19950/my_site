@@ -60,6 +60,15 @@ d:    &a5 {type: http,     behavior: domain,    interval: 86400}
 i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 
 proxy-providers: null
+  # local:
+  #   type: file
+  #   path: ./proxy_providers/local.yaml
+  #   format: yaml
+  # free:
+  #   <<: *a1
+  #   interval: 900
+  #   path: ./proxy_providers/free.yaml
+  #   url: https://**/free
     
 proxies: null
 proxy-groups:

@@ -63,8 +63,17 @@ proxy-providers:
   mksshare:
     <<: *a1
     interval: 900
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/mksshare.yaml
     path: ./proxy_providers/mksshare.yaml
+    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/mksshare.yaml
+  # local:
+  #   type: file
+  #   path: ./proxy_providers/local.yaml
+  #   format: yaml
+  # free:
+  #   <<: *a1
+  #   interval: 900
+  #   path: ./proxy_providers/free.yaml
+  #   url: https://**/free
     
 proxies: null
 proxy-groups:

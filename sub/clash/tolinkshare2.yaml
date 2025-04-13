@@ -63,8 +63,17 @@ proxy-providers:
   tolinkshare2:
     <<: *a1
     interval: 900
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/tolinkshare2.yaml
     path: ./proxy_providers/tolinkshare2.yaml
+    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/tolinkshare2.yaml
+  # local:
+  #   type: file
+  #   path: ./proxy_providers/local.yaml
+  #   format: yaml
+  # free:
+  #   <<: *a1
+  #   interval: 900
+  #   path: ./proxy_providers/free.yaml
+  #   url: https://**/free
     
 proxies: null
 proxy-groups:

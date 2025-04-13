@@ -63,8 +63,17 @@ proxy-providers:
   ripaojiedian:
     <<: *a1
     interval: 43200
-    url: https://raw.githubusercontent.com/ripaojiedian/freenode/refs/heads/main/clash
     path: ./proxy_providers/ripaojiedian.yaml
+    url: https://raw.githubusercontent.com/ripaojiedian/freenode/refs/heads/main/clash
+  # local:
+  #   type: file
+  #   path: ./proxy_providers/local.yaml
+  #   format: yaml
+  # free:
+  #   <<: *a1
+  #   interval: 900
+  #   path: ./proxy_providers/free.yaml
+  #   url: https://**/free
     
 proxies: null
 proxy-groups:
