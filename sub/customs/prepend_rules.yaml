@@ -1,0 +1,41 @@
+# Clash Nyanpasu Merge Template (YAML)
+# Documentation on https://nyanpasu.elaina.moe/
+# Set the default merge strategy to recursive merge. 
+# Enable the old mode with the override__ prefix. 
+# Use the filter__ prefix to filter lists (removing unwanted content). 
+# All prefixes should support accessing maps or lists with a.b.c syntax.
+
+# proxy-groups:
+# #分流分组
+#   - {name: 🚀 手动切换, <<: *a2}
+#   - {name: 🌏 全球加速, <<: *a3}
+#   - {name: 🤖 OpenAi,   type: select, proxies: [🇺🇲 美国节点]}
+#   - {name: 🎬 国际媒体, <<: *a3}
+#   - {name: 📟 电报消息, <<: *a3}
+#   - {name: 🌌 谷歌服务, <<: *a3}
+#   - {name: 🍎 苹果服务, <<: *a3}
+#   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
+#   - {name: 🐦 推特服务, <<: *a3}
+#   - {name: 🎮 游戏平台, <<: *a3}
+#   - {name: 🆎 AdBlock, type: select, proxies: [REJECT]}
+#   - {name: 🐟 兜底分流, <<: *a3}
+  
+# #节点分组
+#   - {name: ♻️ 自动选择, <<: [*a4, *r1]}
+#   - {name: 🇭🇰 香港节点, <<: [*a4, *hk]   }
+#   - {name: 🇯🇵 日本节点, <<:  [*a4, *jp]   }   
+#   - {name: 🇨🇳 台湾节点, <<: [*a4, *tw]   }
+#   - {name: 🇺🇲 美国节点, <<: [*a4, *us]   }
+#   - {name: 🇸🇬 狮城节点, <<: [*a4, *sg]    }
+#   - {name: 🇩🇪 德国节点, <<: [*a4, *de]   }
+#   - {name: 🇬🇧 英国节点, <<: [*a4, *uk]   }
+#   - {name: 🇷🇺 俄罗斯节点, <<: [*a4, *ru]   }
+#   - {name: 🇲🇾 马来西亚节点, <<: [*a4, *my] }
+#   - {name: 🇰🇷 韩国节点, <<: [*a4, *kr]   }
+prepend-rules:
+  - DOMAIN-KEYWORD,supjav,🇭🇰 香港节点
+  - DOMAIN-KEYWORD,7mmtv,🇭🇰 香港节点
+  - DOMAIN-KEYWORD,missav,🇭🇰 香港节点
+  - DOMAIN-KEYWORD,javlibrary,🇭🇰 香港节点
+  - DOMAIN,www.pexels.com,🇭🇰 香港节点
+  - DOMAIN-SUFFIX,cdn-centaurus.com,🚀 手动切换
