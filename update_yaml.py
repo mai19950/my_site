@@ -59,8 +59,8 @@ def update_rules():
   free_data = {
     **default_data,
     "key": "free",
-    "interval": 900,
-    "url": f"https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/free",
+    "interval": 300,
+    "url": f"https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/free",
     "path": path_value("free")
   }
   git_data = {
@@ -94,8 +94,8 @@ def update_rules():
     add_subscript_link([{
       **default_data,
       "key": it,
-      "interval": 900,
-      "url": f"https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/{it}.yaml",
+      "interval": 300,
+      "url": f"https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/{it}.yaml",
       "path": path_value(it)
     }], f'{it}.yaml')
 

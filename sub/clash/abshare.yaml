@@ -62,9 +62,9 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   abshare:
     <<: *a1
-    interval: 900
+    interval: 300
     path: ./proxy_providers/abshare.yaml
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/abshare.yaml
+    url: https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/abshare.yaml
   # local:
   #   type: file
   #   path: ./proxy_providers/local.yaml

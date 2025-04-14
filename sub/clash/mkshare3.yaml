@@ -62,9 +62,9 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   mkshare3:
     <<: *a1
-    interval: 900
+    interval: 300
     path: ./proxy_providers/mkshare3.yaml
-    url: https://raw.githubusercontent.com/mai19950/free_nodes/refs/heads/main/sub/clash/mkshare3.yaml
+    url: https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/mkshare3.yaml
   # local:
   #   type: file
   #   path: ./proxy_providers/local.yaml
