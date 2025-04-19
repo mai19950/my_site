@@ -33,9 +33,28 @@
 #   - {name: 🇲🇾 马来西亚节点, <<: [*a4, *my] }
 #   - {name: 🇰🇷 韩国节点, <<: [*a4, *kr]   }
 prepend-rules:
-  - DOMAIN-KEYWORD,supjav,🇭🇰 香港节点
-  - DOMAIN-KEYWORD,7mmtv,🇭🇰 香港节点
-  - DOMAIN-KEYWORD,missav,🇭🇰 香港节点
-  - DOMAIN-KEYWORD,javlibrary,🇭🇰 香港节点
-  - DOMAIN,www.pexels.com,🇭🇰 香港节点
+  - DOMAIN,supjav.com,🌏 全球加速
+  - DOMAIN,img.supjav.com,🌏 全球加速
+  - DOMAIN-KEYWORD,7mmtv,🌏 全球加速
+  - DOMAIN-KEYWORD,missav,🌏 全球加速
+  - DOMAIN-KEYWORD,javlibrary,🌏 全球加速
+  - DOMAIN-KEYWORD,javtrailers,🌏 全球加速
+  - DOMAIN,www.javlibrary.com,🌏 全球加速
+  - DOMAIN-KEYWORD,premium-beauty,🌏 全球加速
+  - DOMAIN,www.pexels.com,🌏 全球加速
+  - DOMAIN-KEYWORD,sehuatang,🚀 手动切换
+  - DOMAIN,javdb.com,🌏 全球加速
+  - DOMAIN,javdb524.com,DIRECT
+  - DOMAIN,javdb456.com,DIRECT
   - DOMAIN-SUFFIX,cdn-centaurus.com,🚀 手动切换
+  - DOMAIN,fc2stream.tv,🚀 手动切换
+  - DOMAIN,mmsi01.xyz,🚀 手动切换
+  - DOMAIN,mmvh01.xyz,🚀 手动切换
+  - DOMAIN-SUFFIX,milocdn.com,🚀 手动切换
+  - DOMAIN,javclan.com,🚀 手动切换
+  - DOMAIN,lk1.supremejav.com,🚀 手动切换
+  - DOMAIN,stbhg.click,🚀 手动切换
+  - DOMAIN,avbebe.com,🇺🇲 美国节点
+  - DOMAIN,emturbovid.com,🚀 手动切换
+  - DOMAIN-SUFFIX,mongodb.com,DIRECT
+  - DOMAIN-SUFFIX,serv00.com,DIRECT
