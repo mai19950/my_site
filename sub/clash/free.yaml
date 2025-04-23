@@ -50,8 +50,8 @@ subscriptions: &s1 {use: [free]}
 all_proxy_group:   &a3 {type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇷🇺 俄罗斯节点, 🇲🇾 马来西亚节点, 🇰🇷 韩国节点, abshare, abshare3, mkshare3, mksshare, tolinkshare2, toshare5, DIRECT]}
 # pr:   &a3 {type: select,   proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT] }
 # p:    &a1 {type: http,     interval: 900,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300} }
-p:    &a1 {type: http,     health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300} }
-auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 300, <<: *s1 }
+p:    &a1 {type: http,     health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 90} }
+auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 90, <<: *s1 }
 use:  &a2 {type: select,   <<: *s1 }
 c:    &a6 {type: http,     behavior: classical, format: yaml, interval: 86400}
 d:    &a5 {type: http,     behavior: domain,    format: text, interval: 86400}
@@ -83,13 +83,13 @@ proxy-groups:
   - {name: 🎬 国际媒体, <<: *a3}
   - {name: 📟 电报消息, <<: *a3}
   - {name: 🌌 谷歌服务, <<: *a3}
+  - {name: 📺 日本媒体, type: select,   proxies: [🇯🇵 日本节点, 🚀 手动切换]}
   - {name: 🍎 苹果服务, <<: *a3}
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🚀 手动切换]}
   - {name: 🐦 推特服务, <<: *a3}
   - {name: 🎮 游戏平台, <<: *a3}
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT]}
   - {name: 🐟 兜底分流, <<: *a3}
-  - {name: 📺 日本媒体, type: select,   proxies: [🇯🇵 日本节点, 🚀 手动切换]}
   
 #节点分组
 # a4更改为a2，即为手动选择

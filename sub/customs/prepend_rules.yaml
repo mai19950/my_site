@@ -43,6 +43,7 @@ prepend-rules:
   - DOMAIN-KEYWORD,premium-beauty,🌏 全球加速
   - DOMAIN,www.pexels.com,🌏 全球加速
   - DOMAIN-KEYWORD,sehuatang,🚀 手动切换
+  - DOMAIN-KEYWORD,javhoo,🚀 手动切换
   - DOMAIN,javdb.com,🌏 全球加速
   - DOMAIN,tktube.com,🌏 全球加速
   - DOMAIN,xslist.org,🌏 全球加速
@@ -65,3 +66,4 @@ prepend-rules:
   - DOMAIN-SUFFIX,tapecontent.net,DIRECT
   - DOMAIN,streamtape.com,DIRECT
   - DOMAIN-SUFFIX,ad-nex.com,REJECT
+  - DOMAIN-SUFFIX,xunlei.com,DIRECT
