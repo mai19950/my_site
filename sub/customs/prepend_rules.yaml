@@ -44,12 +44,16 @@ prepend-rules:
   - DOMAIN,www.pexels.com,🌏 全球加速
   - DOMAIN-KEYWORD,sehuatang,🚀 手动切换
   - DOMAIN,javdb.com,🌏 全球加速
+  - DOMAIN,tktube.com,🌏 全球加速
+  - DOMAIN,xslist.org,🌏 全球加速
   - DOMAIN,javdb524.com,DIRECT
   - DOMAIN,javdb456.com,DIRECT
+  - DOMAIN,gitlab.hk,DIRECT
   - DOMAIN-SUFFIX,cdn-centaurus.com,🚀 手动切换
   - DOMAIN,fc2stream.tv,🚀 手动切换
   - DOMAIN,mmsi01.xyz,🚀 手动切换
   - DOMAIN,mmvh01.xyz,🚀 手动切换
+  - DOMAIN,ryderjet.com,🚀 手动切换
   - DOMAIN-SUFFIX,milocdn.com,🚀 手动切换
   - DOMAIN,javclan.com,🚀 手动切换
   - DOMAIN,lk1.supremejav.com,🚀 手动切换
@@ -58,3 +62,6 @@ prepend-rules:
   - DOMAIN,emturbovid.com,🚀 手动切换
   - DOMAIN-SUFFIX,mongodb.com,DIRECT
   - DOMAIN-SUFFIX,serv00.com,DIRECT
+  - DOMAIN-SUFFIX,tapecontent.net,DIRECT
+  - DOMAIN,streamtape.com,DIRECT
+  - DOMAIN-SUFFIX,ad-nex.com,REJECT

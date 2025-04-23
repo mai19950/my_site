@@ -53,9 +53,9 @@ all_proxy_group:   &a3 {type: select, proxies: [♻️ 自动选择, 🚀 手动
 p:    &a1 {type: http,     health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300} }
 auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 300, <<: *s1 }
 use:  &a2 {type: select,   <<: *s1 }
-c:    &a6 {type: http,     behavior: classical, interval: 86400}
-d:    &a5 {type: http,     behavior: domain,    interval: 86400}
-i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
+c:    &a6 {type: http,     behavior: classical, format: yaml, interval: 86400}
+d:    &a5 {type: http,     behavior: domain,    format: text, interval: 86400}
+i:    &a7 {type: http,     behavior: ipcidr,    format: yaml, interval: 86400}
 
 proxy-providers:
   toshare5:
@@ -108,7 +108,7 @@ proxy-groups:
 
 # 分流规则 
 rule-providers:
-  Ad:          {<<: *a5, url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt,                                    path: ./ruleset/anti-ad-clash.yaml }
+  AdBlock:     {<<: *a5, url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt,                                    path: ./ruleset/anti-ad-clash.yaml }
   OpenAi:      {<<: *a6, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml,                     path: ./ruleset/OpenAi.yaml        }
   BiliBili:    {<<: *a6, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.yaml,                 path: ./ruleset/BiliBili.yaml      }
   Bahamut:     {<<: *a6, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bahamut/Bahamut.yaml,                   path: ./ruleset/Bahamut.yaml       }
@@ -134,7 +134,7 @@ rule-providers:
 rules:
   - RULE-SET,MyDirect,🐶 直连手动
   - RULE-SET,Japan,📺 日本媒体
-  - RULE-SET,Ad,🆎 AdBlock
+  - RULE-SET,AdBlock,🆎 AdBlock
   - RULE-SET,OpenAi,🤖 OpenAi
   - RULE-SET,BiliBili,📺 哔哩哔哩
   - RULE-SET,Bahamut,📺 哔哩哔哩
