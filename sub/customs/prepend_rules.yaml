@@ -54,6 +54,7 @@ prepend-rules:
   - DOMAIN,fc2stream.tv,🚀 手动切换
   - DOMAIN,mmsi01.xyz,🚀 手动切换
   - DOMAIN,mmvh01.xyz,🚀 手动切换
+  - DOMAIN,hjd2048.com,🚀 手动切换
   - DOMAIN,ryderjet.com,🚀 手动切换
   - DOMAIN-SUFFIX,milocdn.com,🚀 手动切换
   - DOMAIN,javclan.com,🚀 手动切换
@@ -62,8 +63,19 @@ prepend-rules:
   - DOMAIN,avbebe.com,🇺🇲 美国节点
   - DOMAIN,emturbovid.com,🚀 手动切换
   - DOMAIN-SUFFIX,mongodb.com,DIRECT
-  - DOMAIN-SUFFIX,serv00.com,DIRECT
+  - DOMAIN-KEYWORD,serv00,DIRECT
   - DOMAIN-SUFFIX,tapecontent.net,DIRECT
-  - DOMAIN,streamtape.com,DIRECT
+  - DOMAIN-KEYWORD,streamtape,DIRECT
+  - DOMAIN-SUFFIX,2babes.com,🚀 手动切换
   - DOMAIN-SUFFIX,ad-nex.com,REJECT
   - DOMAIN-SUFFIX,xunlei.com,DIRECT
+  - DOMAIN-SUFFIX,subtitlecat.com,DIRECT
+  - DOMAIN-SUFFIX,pipecdn.vip,🌏 全球加速
+  - DOMAIN-SUFFIX,yfsp.tv,🌏 全球加速
+
+profile:
+  store-selected: true
+
+dns:
+  use-system-hosts: false
+

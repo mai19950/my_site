@@ -12,16 +12,18 @@ default_data = {
   "url": None
 }
 
-all_proxies = "all_proxy_group:   &a3 {type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇷🇺 俄罗斯节点, 🇲🇾 马来西亚节点, 🇰🇷 韩国节点, abshare, abshare3, mkshare3, mksshare, tolinkshare2, toshare5, DIRECT]}\n"
+# all_proxies = "all_proxy_group:   &a3 {type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇷🇺 俄罗斯节点, 🇲🇾 马来西亚节点, 🇰🇷 韩国节点, free, abshare, abshare3, mkshare3, mksshare, tolinkshare2, toshare5, DIRECT]}\n"
+all_proxies = "all_proxy_group:   &a3 {type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🛰️free, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇷🇺 俄罗斯节点, 🇲🇾 马来西亚节点, 🇰🇷 韩国节点, DIRECT]}\n"
 
 group_filter = """# nice group
-  - {name: abshare,      <<: *a2, filter: "abshare"      }
-  - {name: abshare3,     <<: *a2, filter: "abshare3"     }
-  - {name: mkshare3,     <<: *a2, filter: "mkshare3"     }
-  - {name: mksshare,     <<: *a2, filter: "mksshare"     }
-  - {name: toshare5,     <<: *a2, filter: "toshare5"     }
-  - {name: tolinkshare2, <<: *a2, filter: "tolinkshare2" }
+  - {name: 🛰️free,         <<: *a4, filter: "share"        }
 """
+  # - {name: abshare,      <<: *a4, filter: "abshare"      }
+  # - {name: abshare3,     <<: *a4, filter: "abshare3"     }
+  # - {name: mkshare3,     <<: *a4, filter: "mkshare3"     }
+  # - {name: mksshare,     <<: *a4, filter: "mksshare"     }
+  # - {name: toshare5,     <<: *a4, filter: "toshare5"     }
+  # - {name: tolinkshare2, <<: *a4, filter: "tolinkshare2" }
 
 def parse_remarks(node: str) -> str:
   match = re.search(r'["\']?name["\']?:\s*([^,}]+)', node)
@@ -116,7 +118,7 @@ def update_rules():
 
   add_subscript_link([free_data, sos_data], "all.yaml", True)
 
-  add_subscript_link([free_data], "free.yaml", True)
+  add_subscript_link([free_data], "free.yaml")
   add_subscript_link([sos_data], "sos.yaml")
   add_subscript_link([ripaojiedian_data], "ripaojiedian.yaml")
   add_subscript_link([git_data], "git.yaml")
