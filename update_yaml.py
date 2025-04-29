@@ -73,6 +73,13 @@ def add_subscript_link(data: list, filename: str, is_add=False):
 
 
 def update_rules():
+  my_cf = {
+    **default_data,
+    "key": "my_cf",
+    # "url": "https://vleccc.pages.dev/mai?sub=SUB.CMLiussss.net&proxyip=ProxyIP.US.CMLiussss.net",
+    "url": "https://vle.mai9900.dpdns.org/mai?sub=SUB.CMLiussss.net&proxyip=ProxyIP.US.CMLiussss.net",
+    "path": path_value("my_cf")
+  }
   free_data = {
     **default_data,
     "key": "free",
@@ -116,9 +123,10 @@ def update_rules():
       "path": path_value(it)
     }], f'{it}.yaml')
 
-  add_subscript_link([free_data, sos_data], "all.yaml", True)
+  add_subscript_link([free_data, sos_data, my_cf], "all.yaml", True)
 
   add_subscript_link([free_data], "free.yaml")
+  add_subscript_link([my_cf], "my_cf.yaml")
   add_subscript_link([sos_data], "sos.yaml")
   add_subscript_link([ripaojiedian_data], "ripaojiedian.yaml")
   add_subscript_link([git_data], "git.yaml")

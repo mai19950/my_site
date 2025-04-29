@@ -47,6 +47,10 @@ const direct = [
   "DOMAIN-KEYWORD,streamtape",
   "DOMAIN-SUFFIX,xunlei.com",
   "DOMAIN-SUFFIX,subtitlecat.com",
+  "DOMAIN-SUFFIX,88cdn.com",
+  "DOMAIN-KEYWORD,gcalenpjmijncebpfijmoaglllgpjag",
+  "DOMAIN-SUFFIX,tampermonkey.net",
+  "DOMAIN-SUFFIX,jdbstatic.com",
 ];
 
 const reject = [
@@ -56,13 +60,13 @@ const reject = [
 
 function main(config, profileName) {
   // 把旧规则合并到新规则后面(也可以用其它合并数组的办法)
-  let oldrules = config["rules"];
+  let oldRules = config["rules"];
   const prependRule = [].concat(
     global.map(it => (it += ",🌏 全球加速")),
     select.map(it => (it += ",🚀 手动切换")),
     direct.map(it => (it += ",DIRECT")),
     reject.map(it => (it += ",REJECT"))
   );
-  config["rules"] = prependRule.concat(oldrules);
+  config["rules"] = prependRule.concat(oldRules);
   return config;
 }

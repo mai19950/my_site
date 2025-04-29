@@ -45,9 +45,9 @@ dns:
 #========= 建立锚点 =========#
 
 # 策略组引用
-subscriptions: &s1 {use: [free, sos, my_cf]}
+subscriptions: &s1 {use: [my_cf]}
 
-all_proxy_group:   &a3 {type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🛰️free, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇷🇺 俄罗斯节点, 🇲🇾 马来西亚节点, 🇰🇷 韩国节点, DIRECT]}
+all_proxy_group:   &a3 {type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🇷🇺 俄罗斯节点, 🇲🇾 马来西亚节点, 🇰🇷 韩国节点, DIRECT]}
 # pr:   &a3 {type: select,   proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT] }
 # p:    &a1 {type: http,     interval: 900,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300} }
 p:    &a1 {type: http,     health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 90} }
@@ -58,21 +58,11 @@ d:    &a5 {type: http,     behavior: domain,    format: text, interval: 86400}
 i:    &a7 {type: http,     behavior: ipcidr,    format: yaml, interval: 86400}
 
 proxy-providers:
-  free:
-    <<: *a1
-    interval: 300
-    path: ./proxy_providers/free.yaml
-    url: https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/free
   my_cf:
     <<: *a1
     interval: 86400
     path: ./proxy_providers/my_cf.yaml
     url: https://vle.mai9900.dpdns.org/mai?sub=SUB.CMLiussss.net&proxyip=ProxyIP.US.CMLiussss.net
-  sos:
-    <<: *a1
-    interval: 86400
-    path: ./proxy_providers/sos.yaml
-    url: https://SOS.CMLiussss.net/auto
   # local:
   #   type: file
   #   path: ./proxy_providers/local.yaml
@@ -110,8 +100,7 @@ proxy-groups:
   - {name: 🇺🇲 美国节点,     <<: *a4, filter: "美|US|(?i)States|American"      }
   - {name: 🇸🇬 狮城节点,     <<: *a4, filter: "新|坡|SG|(?i)Singapore"          }
 
-# nice group
-  - {name: 🛰️free,         <<: *a4, filter: "share"        }
+###other_group
 
   - {name: 🇩🇪 德国节点,     <<: *a4, filter: "德|DE|(?i)Germany|Deutschland"   }
   - {name: 🇷🇺 俄罗斯节点,   <<: *a4, filter: "俄|RU|(?i)Russia|Moscow"   }
