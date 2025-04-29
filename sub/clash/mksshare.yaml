@@ -62,7 +62,7 @@ proxy-providers:
     <<: *a1
     interval: 300
     path: ./proxy_providers/mksshare.yaml
-    url: https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/mksshare.yaml
+    url: https://serv00.mai9900.dpdns.org/sub/clash/mksshare.yaml
   # local:
   #   type: file
   #   path: ./proxy_providers/local.yaml

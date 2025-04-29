@@ -84,7 +84,8 @@ def update_rules():
     **default_data,
     "key": "free",
     "interval": 300,
-    "url": f"https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/free",
+    # "url": f"https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/free",
+    "url": f"https://serv00.mai9900.dpdns.org/sub/clash/free",
     "path": path_value("free")
   }
   git_data = {
@@ -119,7 +120,7 @@ def update_rules():
       **default_data,
       "key": it,
       "interval": 300,
-      "url": f"https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/{it}.yaml",
+      "url": f"https://serv00.mai9900.dpdns.org/sub/clash/{it}.yaml",
       "path": path_value(it)
     }], f'{it}.yaml')
 

@@ -16,6 +16,7 @@ const global = [
   "DOMAIN,img.supjav.com",
   "DOMAIN,supjav.com",
   "DOMAIN,avbebe.com",
+  "DOMAIN-SUFFIX,mai9900.dpdns.org",
 ];
 
 const select = [

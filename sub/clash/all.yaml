@@ -62,7 +62,7 @@ proxy-providers:
     <<: *a1
     interval: 300
     path: ./proxy_providers/free.yaml
-    url: https://raw.githubusercontent.com/mai19950/sites/refs/heads/main/clash/free
+    url: https://serv00.mai9900.dpdns.org/sub/clash/free
   my_cf:
     <<: *a1
     interval: 86400
